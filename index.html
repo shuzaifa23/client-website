@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIN Enterprises | Premium Bricks & Construction</title>
-    <meta name="description" content="PIN Enterprises - High-quality Fly Ash Bricks, Interlock Bricks, and comprehensive construction solutions. Built on Quality, Trusted for Life.">
+    <meta name="description" content="PIN Enterprises - High-quality Hollow Bricks, Interlock Bricks, and comprehensive construction solutions. Built on Quality, Trusted for Life.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <div class="logo-text">PIN <span>ENTERPRISES</span></div>
-            </div>
+            <a href="#home" class="logo">
+                <img src="assets/logo.jpg?v=2" alt="PIN Enterprises Logo" class="logo-img">
+                <div class="logo-text" style="display: none;">PIN <span>ENTERPRISES</span></div>
+            </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -29,13 +30,25 @@
     </nav>
 
     <header id="home" class="hero">
-        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="fade-in-up">Building The Future,<br>One Brick At A Time.</h1>
-            <p class="fade-in-up delay-1">Premium Manufacturers of Fly Ash & Interlock Bricks in Tamil Nadu.</p>
-            <div class="hero-buttons fade-in-up delay-2">
-                <a href="#products" class="btn-primary">Explore Products</a>
-                <a href="#contact" class="btn-secondary">Get a Quote</a>
+            <div class="hero-text-side">
+                <h1 class="fade-in-up">Building The Future,<br>One Brick At A Time.</h1>
+                <p class="fade-in-up delay-1">Premium Manufacturers of Hollow & Interlock Bricks in Tamil Nadu.</p>
+                <div class="hero-buttons fade-in-up delay-2">
+                    <a href="#products" class="btn-primary">Explore Products</a>
+                    <a href="#contact" class="btn-secondary">Get a Quote</a>
+                </div>
+            </div>
+            <div class="hero-slider-side fade-in-up delay-1">
+                <div class="swiper heroSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/hero-slide-1.jpg" alt="PIN Enterprises Factory"></div>
+                        <div class="swiper-slide"><img src="assets/hero-slide-2.png" alt="PIN Enterprises Factory"></div>
+                        <div class="swiper-slide"><img src="assets/hero-slide-3.jpg" alt="PIN Enterprises Factory"></div>
+                        <div class="swiper-slide"><img src="assets/hero-slide-4.png" alt="PIN Enterprises Mixer"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -76,8 +89,29 @@
             </div>
         </div>
     </section>
+    <section id="facility" class="facility section bg-dark">
+        <div class="container">
+            <div class="section-header center">
+                <h2>Our Manufacturing Facility</h2>
+                <div class="line center"></div>
+                <p class="subtitle">State-of-the-art machinery ensuring top-tier quality control and high-volume production capacity.</p>
+            </div>
+            
+            <div class="factory-grid">
+                <div class="factory-item">
+                    <img src="assets/factory1.jpg" alt="Automated Mixing Machinery">
+                </div>
+                <div class="factory-item">
+                    <img src="assets/factory2.jpg" alt="Raw Material Processing">
+                </div>
+                <div class="factory-item">
+                    <img src="assets/factory3.png" alt="Hydraulic Brick Press Machine">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section id="products" class="products section bg-darker">
+    <section id="products" class="products section">
         <div class="container">
             <div class="section-header center">
                 <h2>Our Premium Products</h2>
@@ -89,10 +123,10 @@
                 <!-- Product 1 -->
                 <div class="product-card">
                     <div class="product-img">
-                        <img src="assets/fly_ash_brick.png" alt="Fly Ash Brick">
+                        <img src="assets/fly_ash_brick.png" alt="Hollow Brick">
                     </div>
                     <div class="product-info">
-                        <h3>Fly Ash Bricks</h3>
+                        <h3>Hollow Bricks</h3>
                         <p class="dimensions">Size: 9" x 4" x 5"</p>
                         <p class="desc">High-strength, eco-friendly bricks perfect for modern construction. Offers superior thermal insulation and durability.</p>
                     </div>
@@ -101,11 +135,11 @@
                 <!-- Product 2 -->
                 <div class="product-card">
                     <div class="product-img">
-                        <img src="assets/interlock_brick.png" alt="Interlock Brick 6 inch">
+                        <img src="assets/interlock_brick_new.png" alt="Interlock Brick 6 inch">
                     </div>
                     <div class="product-info">
-                        <h3>Interlock Bricks (6 Inch)</h3>
-                        <p class="dimensions">Size: 6 Inch</p>
+                        <h3>Interlock Bricks</h3>
+                        <p class="dimensions">8 Inch (20x28cm) & 6 Inch (15x28cm)</p>
                         <p class="desc">Smart interlocking mechanism for faster, cement-saving construction. Ideal for sturdy walls and compound structures.</p>
                     </div>
                 </div>
@@ -113,19 +147,137 @@
                 <!-- Product 3 -->
                 <div class="product-card">
                     <div class="product-img">
-                        <img src="assets/interlock_brick.png" alt="Interlock Brick 8 inch">
+                        <img src="assets/fly_ash_brick_new.png" alt="Fly Ash Bricks">
                     </div>
                     <div class="product-info">
-                        <h3>Interlock Bricks (8 Inch)</h3>
-                        <p class="dimensions">Size: 8 Inch</p>
-                        <p class="desc">Heavy-duty interlocking bricks for load-bearing walls. Provides exceptional structural integrity and aesthetic finish.</p>
+                        <h3>Fly Ash Bricks</h3>
+                        <p class="dimensions">Standard Size</p>
+                        <p class="desc">Engineered for perfection and strength. Our fly ash bricks are durable, reliable, and perfectly shaped for premium construction.</p>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/red_brick.png" alt="Red Bricks">
+                    </div>
+                    <div class="product-info">
+                        <h3>Red Bricks</h3>
+                        <p class="dimensions">Classic Clay</p>
+                        <p class="desc">Traditional, high-quality red clay bricks that offer excellent thermal mass, acoustic insulation, and a classic aesthetic appeal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery section bg-light">
+        <div class="container">
+            <div class="section-header center">
+                <h2>Bricks Gallery</h2>
+                <div class="line center"></div>
+                <p class="subtitle" style="max-width: 850px; margin: 1.5rem auto 0; line-height: 1.8;">Take a closer look at the exceptional quality and finish of our manufactured bricks. From curing to dispatch, every block meets our highest standards.</p>
+            </div>
+            
+            <div class="flip-book-container">
+                <div id="bricks-flipbook">
+                    <!-- Staples for realistic binding -->
+                    <div class="staple staple-top"></div>
+                    <div class="staple staple-bottom"></div>
+
+                    <!-- Front Cover -->
+                    <div class="page page-cover page-cover-top">
+                        <div class="page-content cover-content">
+                            <img src="assets/logo.jpg?v=2" alt="PIN Enterprises Logo" class="book-logo">
+                            <h2>Bricks Gallery</h2>
+                            <p>Product Catalog</p>
+                        </div>
+                    </div>
+
+                    <!-- Pages -->
+                    <div class="page"><div class="page-content"><img src="assets/gallery-1.jpg" alt="PIN Enterprises Brick Detail"></div></div>
+                    <div class="page"><div class="page-content"><img src="assets/gallery-2.jpg" alt="PIN Enterprises Brick Stack"></div></div>
+                    <div class="page"><div class="page-content"><img src="assets/gallery-3.jpg" alt="PIN Enterprises Hollow Bricks"></div></div>
+                    <div class="page"><div class="page-content"><img src="assets/gallery-4.jpg" alt="PIN Enterprises Solid Bricks"></div></div>
+                    <div class="page"><div class="page-content"><img src="assets/gallery-5.jpg" alt="PIN Enterprises Interlocking Brick"></div></div>
+                    <div class="page"><div class="page-content"><img src="assets/gallery-6.jpg" alt="PIN Enterprises Brick Production"></div></div>
+                    <div class="page"><div class="page-content"><img src="assets/gallery-7.jpg" alt="PIN Enterprises Grey Bricks"></div></div>
+                    <div class="page"><div class="page-content"><img src="assets/gallery-8.jpg" alt="PIN Enterprises Quality Bricks"></div></div>
+                    
+                    <div class="page">
+                        <div class="page-content">
+                            <img src="assets/gallery-9.png" alt="PIN Enterprises Brick Dimensions 20cm">
+                            <h4>8 Inch Interlock (20cm)</h4>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <img src="assets/gallery-10.png" alt="PIN Enterprises Brick Dimensions 28cm">
+                            <h4>8 Inch Interlock (28cm)</h4>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <img src="assets/gallery-11.png" alt="PIN Enterprises Brick Dimensions 15cm">
+                            <h4>6 Inch Interlock (15cm)</h4>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <img src="assets/gallery-12.png" alt="PIN Enterprises Brick Dimensions 28cm">
+                            <h4>6 Inch Interlock (28cm)</h4>
+                        </div>
+                    </div>
+
+                    <!-- Back Cover -->
+                    <div class="page page-cover page-cover-bottom">
+                        <div class="page-content cover-content">
+                            <h2>PIN Enterprises</h2>
+                            <p>Quality Bricks, Built to Last.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="services section">
+
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header center">
+                <h2>Brick Impressions</h2>
+                <div class="line center"></div>
+                <p class="subtitle" style="max-width: 850px; margin: 1.5rem auto 0; line-height: 1.8;">Bricks possess the ability to shape space through texture, tone, and proportion. Their presence lends clarity and character to architecture. Featured here are selected applications that demonstrate how our hollow and interlock bricks result in timeless facades and enduring environments.</p>
+            </div>
+            
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="assets/project_interior_1783768522456.png" alt="Interior Brick Work">
+                    <h4>Interior</h4>
+                </div>
+                <div class="project-item">
+                    <img src="assets/project_institutional_1783768534878.png" alt="Institutional Building">
+                    <h4>Institutional</h4>
+                </div>
+                <div class="project-item">
+                    <img src="assets/project_exterior_1783768547439.png" alt="Exterior Brick Facade">
+                    <h4>Exterior</h4>
+                </div>
+                <div class="project-item">
+                    <img src="assets/project_restaurant_1783768561247.png" alt="Restaurant Interior">
+                    <h4>Restaurant</h4>
+                </div>
+                <div class="project-item">
+                    <img src="assets/project_commercial_1783768578385.png" alt="Commercial Building">
+                    <h4>Commercial</h4>
+                </div>
+                <div class="project-item">
+                    <img src="assets/project_residential_1783768591204.png" alt="Residential Home">
+                    <h4>Residential</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services section bg-dark">
         <div class="container">
             <div class="section-header">
                 <h2>Our Services</h2>
@@ -161,7 +313,7 @@
         </div>
     </section>
 
-    <section id="contact" class="contact section bg-darker">
+    <section id="contact" class="contact section bg-dark">
         <div class="container">
             <div class="section-header center">
                 <h2>Get In Touch</h2>
@@ -180,8 +332,8 @@
                         <div class="c-icon"><i class="fas fa-phone-alt"></i></div>
                         <div class="c-text">
                             <h4>Phone & WhatsApp</h4>
-                            <p><a href="tel:+919600757553">+91 9600757553</a></p>
-                            <p><a href="tel:+919003329921">+91 9003329921</a></p>
+                            <p><a href="tel:+919600757553"><i class="fas fa-phone-alt" style="font-size: 0.9em; margin-right: 5px;"></i>+91 9600757553</a></p>
+                            <p><a href="https://wa.me/919003329921?text=Hello%20PIN%20Enterprises!%20I%20would%20like%20to%20know%20more%20about%20your%20manufactured%20bricks%20and%20products." target="_blank"><i class="fab fa-whatsapp" style="font-size: 1.1em; margin-right: 5px; color: #25D366;"></i>+91 9003329921</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -195,29 +347,121 @@
                         <div class="c-icon"><i class="fas fa-clock"></i></div>
                         <div class="c-text">
                             <h4>Business Hours</h4>
-                            <p>7:00 AM - 7:00 PM (Daily)</p>
+                            <p>24/7 Available</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="c-icon"><i class="fab fa-instagram"></i></div>
+                        <div class="c-text">
+                            <h4>Instagram</h4>
+                            <p><a href="https://instagram.com/pin_enterprise" target="_blank" rel="noopener noreferrer">@pin_enterprise</a></p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="map-container">
-                    <!-- Google Maps Embed or Link placeholder -->
-                    <div class="map-placeholder">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <h3>Find Us On Google Maps</h3>
-                        <a href="https://maps.app.goo.gl/3vhNhDuJdw3DN1wK9?g_st=iw" target="_blank" class="btn-primary mt-2">Open Map</a>
-                    </div>
+                    <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=PIN%20Fly%20ash%20bricks%20%26%20Interlock%20Bricks,%20Chinnappanaickenur,%20Tamil%20Nadu&t=&z=14&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
+        <div class="container footer-content" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; padding: 4rem 0 2rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); margin-bottom: 1rem;">
+            
+            <div class="footer-logo" style="flex: 1; min-width: 250px; text-align: left; display: flex; flex-direction: column; justify-content: center;">
+                <img src="assets/logo.jpg?v=2" alt="PIN Enterprises Logo" style="height: 150px; width: 150px; object-fit: contain; mix-blend-mode: multiply;">
+                <p style="margin-top: 1rem; color: var(--text-muted-dark); max-width: 250px;">Built on Quality, Trusted for Life. Premium Manufacturers of Hollow & Interlock Bricks.</p>
+            </div>
+            
+            <div class="footer-card" style="flex: 2; min-width: 320px; text-align: center;">
+                <div style="max-width: 550px; margin: 0 auto 1.5rem auto; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05);">
+                    <img src="assets/visiting-card.png" alt="PIN Enterprises Visiting Card" style="width: 100%; display: block;">
+                </div>
+                <a href="assets/visiting-card.png" download="PIN-Enterprises-Business-Card.png" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.5rem; font-size: 0.9rem;">
+                    <i class="fas fa-download"></i> Download Card
+                </a>
+            </div>
+
+            <div class="footer-links" style="flex: 1; min-width: 150px; text-align: right; display: flex; flex-direction: column; justify-content: center; align-items: flex-end;">
+                <h4 style="color: var(--text-dark); margin-bottom: 1rem;">Quick Links</h4>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem; padding: 0; align-items: flex-end;">
+                    <li><a href="#home" style="color: var(--text-muted-dark); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-muted-dark)'">Home</a></li>
+                    <li><a href="#about" style="color: var(--text-muted-dark); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-muted-dark)'">About Us</a></li>
+                    <li><a href="#products" style="color: var(--text-muted-dark); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-muted-dark)'">Products</a></li>
+                    <li><a href="#contact" style="color: var(--text-muted-dark); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-muted-dark)'">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
         <div class="footer-bottom">
             <p>&copy; 2026 PIN Enterprises. Built on Quality, Trusted for Life.</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/page-flip.js"></script>
+    <script>
+        // Hero Swiper
+        var swiper = new Swiper(".heroSwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        // Initialize Book Flip
+        window.addEventListener('load', function() {
+            try {
+                const bookEl = document.getElementById('bricks-flipbook');
+                const pages = document.querySelectorAll('.page');
+                
+                if (!bookEl || pages.length === 0) {
+                    console.error("Book element or pages not found");
+                    return;
+                }
+
+                const pageFlip = new St.PageFlip(bookEl, {
+                    width: 450, // base page width
+                    height: 600, // base page height
+                    size: "stretch", // Allows the book to stretch and shrink to its container
+                    minWidth: 100, // Min page width
+                    maxWidth: 500, // Max page width
+                    minHeight: 150, // Min page height
+                    maxHeight: 700, // Max page height
+                    maxShadowOpacity: 0.5,
+                    showCover: false, 
+                    mobileScrollSupport: true,
+                    usePortrait: false, // Forces 2-page spread even on mobile
+                    flippingTime: 1200 // Slower, realistic smooth turn animation
+                });
+
+                pageFlip.loadFromHTML(pages);
+
+                // Auto-turn pages
+                setInterval(() => {
+                    const total = pageFlip.getPageCount();
+                    const current = pageFlip.getCurrentPageIndex();
+                    if (current >= total - 2) {
+                        pageFlip.turnToPage(0);
+                    } else {
+                        pageFlip.flipNext();
+                    }
+                }, 2500); // Shorter wait time before going to the next page
+
+            } catch (error) {
+                console.error("Flipbook Init Error:", error);
+                document.getElementById('bricks-flipbook').innerHTML = '<div style="padding: 20px; color: red;">Error loading flipbook: ' + error.message + '</div>';
+            }
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
