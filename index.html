@@ -10,48 +10,88 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">
-                <img src="assets/logo.jpg?v=2" alt="PIN Enterprises Logo" class="logo-img">
-                <div class="logo-text" style="display: none;">PIN <span>ENTERPRISES</span></div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact" class="btn-outline">Contact Us</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
+    <nav class="navbar new-dark-nav">
+        <div class="nav-container new-nav-layout">
+            <div class="nav-left">
+                <a href="#home" class="logo">
+                    <img src="assets/logo.jpg?v=2" alt="PIN Enterprises Logo" class="logo-img">
+                    <div class="logo-text-stack">
+                        <span class="company-name">PIN Enterprises</span>
+                        <span class="company-tagline">Built on quality, trusted for life.</span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us <i class="fas fa-chevron-down nav-arrow"></i></a></li>
+                    <li><a href="#products">Products <i class="fas fa-chevron-down nav-arrow"></i></a></li>
+                    <li><a href="#services">Services <i class="fas fa-chevron-down nav-arrow"></i></a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="#contact" class="nav-contact"><i class="fas fa-phone-alt"></i> Contact Us</a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text-side">
-                <h1 class="fade-in-up">Building The Future,<br>One Brick At A Time.</h1>
-                <p class="fade-in-up delay-1">Premium Manufacturers of Hollow & Interlock Bricks in Tamil Nadu.</p>
-                <div class="hero-buttons fade-in-up delay-2">
-                    <a href="#products" class="btn-primary">Explore Products</a>
-                    <a href="#contact" class="btn-secondary">Get a Quote</a>
+    <header id="home" class="hero new-full-hero">
+        <div class="hero-bg-slider">
+            <div class="swiper heroBgSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/factory1.jpg" alt="Factory View 1"></div>
+                    <div class="swiper-slide"><img src="assets/factory2.jpg" alt="Factory View 2"></div>
+                    <div class="swiper-slide"><img src="assets/hero-slide-3.jpg" alt="Factory View 3"></div>
+                    <div class="swiper-slide"><img src="assets/hero-slide-4.png" alt="Factory View 4"></div>
                 </div>
             </div>
-            <div class="hero-slider-side fade-in-up delay-1">
-                <div class="swiper heroSwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="assets/hero-slide-1.jpg" alt="PIN Enterprises Factory"></div>
-                        <div class="swiper-slide"><img src="assets/hero-slide-2.png" alt="PIN Enterprises Factory"></div>
-                        <div class="swiper-slide"><img src="assets/hero-slide-3.jpg" alt="PIN Enterprises Factory"></div>
-                        <div class="swiper-slide"><img src="assets/hero-slide-4.png" alt="PIN Enterprises Mixer"></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+        </div>
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content-left">
+                <h1 class="fade-in-up">Building The Future,<br>One Brick At A Time.</h1>
+                <p class="fade-in-up delay-1">Welcome to PIN Enterprises, where innovation meets excellence in premium hollow and interlock brick manufacturing.</p>
+                <div class="hero-buttons fade-in-up delay-2">
+                    <a href="#products" class="btn-orange">Explore more</a>
                 </div>
             </div>
         </div>
     </header>
+    <section class="core-values-section">
+        <div class="container">
+            <div class="core-values-grid">
+                <!-- Value 1 -->
+                <div class="value-card fade-in-up">
+                    <div class="value-icon-wrapper">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Our Commitment to Excellence</h3>
+                    <p>At PIN Enterprises, Our Commitment to Excellence is the driving force behind every endeavor. From manufacturing to turnkey construction, we pledge to consistently deliver precision innovation, and reliability. Our unwavering dedication sets us apart, ensuring that each project, service, and partnership reflects the highest standards.</p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="value-card fade-in-up delay-1">
+                    <div class="value-icon-wrapper">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Of Experts</h3>
+                    <p>PIN's greatest competitive edge is its workforce. We have a strong employee-focused culture and a track record of delivering dependable and secure services. Our motivated, highly skilled, and experienced staff provide the finest service and solutions to the construction sector.</p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="value-card fade-in-up delay-2">
+                    <div class="value-icon-wrapper">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Our Approach to QSHE Policy</h3>
+                    <p>Quality, Health, Safety, and Environment (QSHE) are foundational pillars of PIN Enterprises's operations. We prioritize these aspects to ensure that our work not only meets but exceeds industry standards, while also safeguarding the health of our employees and the environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="about" class="about section">
         <div class="container">
@@ -89,6 +129,19 @@
             </div>
         </div>
     </section>
+
+    <section class="standout-section">
+        <div class="standout-container">
+            <div class="standout-image-wrapper">
+                <img src="assets/hero-slide-4.png" alt="What makes us stand out" class="standout-img">
+            </div>
+            <div class="standout-content">
+                <h2>What makes us<br>stand out?</h2>
+                <p>Choose PIN Enterprises for unparalleled excellence in hollow and interlock brick manufacturing. Our commitment to strict quality control standards ensures a strong and durable foundation for your projects. Our team is dedicated to fostering enduring partnerships through direct delivery and reliable service. Choose us for a future defined by strength, innovation, and a steadfast commitment to construction excellence.</p>
+                <a href="#contact" class="btn-dark-blue">Contact Us</a>
+            </div>
+        </div>
+    </section>
     <section id="facility" class="facility section bg-dark">
         <div class="container">
             <div class="section-header center">
@@ -98,14 +151,46 @@
             </div>
             
             <div class="factory-grid">
-                <div class="factory-item">
-                    <img src="assets/factory1.jpg" alt="Automated Mixing Machinery">
+                <!-- Factory Item 1 -->
+                <div class="factory-item service-slide-card" style="height: 480px;">
+                    <img src="assets/factory1.jpg" alt="Automated Mixing Machinery" class="service-bg">
+                    <div class="service-overlay" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(211,84,0,0.5) 50%, rgba(211,84,0,0.95) 100%);"></div>
+                    <div class="service-top">
+                        <span class="service-number">01</span>
+                        <div class="service-arrow" style="background-color: rgba(255,255,255,0.7);"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></div>
+                    </div>
+                    <div class="service-bottom">
+                        <h3>Training & Development</h3>
+                        <p>At PIN Enterprises, we offer comprehensive training and development services designed to enhance the skills and knowledge of our workforce.</p>
+                    </div>
                 </div>
-                <div class="factory-item">
-                    <img src="assets/factory2.jpg" alt="Raw Material Processing">
+
+                <!-- Factory Item 2 -->
+                <div class="factory-item service-slide-card" style="height: 480px;">
+                    <img src="assets/factory2.jpg" alt="Raw Material Processing" class="service-bg">
+                    <div class="service-overlay" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(211,84,0,0.5) 50%, rgba(211,84,0,0.95) 100%);"></div>
+                    <div class="service-top">
+                        <span class="service-number">02</span>
+                        <div class="service-arrow" style="background-color: #f37021; color: white;"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></div>
+                    </div>
+                    <div class="service-bottom">
+                        <h3>Heat Resistance Insulation</h3>
+                        <p>Our insulation services for resisting heat offer outstanding thermal efficiency and long-lasting strength created to withstand high temperatures.</p>
+                    </div>
                 </div>
-                <div class="factory-item">
-                    <img src="assets/factory3.png" alt="Hydraulic Brick Press Machine">
+
+                <!-- Factory Item 3 -->
+                <div class="factory-item service-slide-card" style="height: 480px;">
+                    <img src="assets/factory3.png" alt="Hydraulic Brick Press Machine" class="service-bg">
+                    <div class="service-overlay" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(150,70,30,0.5) 50%, rgba(150,70,30,0.95) 100%);"></div>
+                    <div class="service-top">
+                        <span class="service-number">03</span>
+                        <div class="service-arrow" style="background-color: rgba(255,255,255,0.7);"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></div>
+                    </div>
+                    <div class="service-bottom">
+                        <h3>Industrial Washing & ...</h3>
+                        <p>PIN Enterprises offers comprehensive industrial washing and cleaning services designed to meet the highest standards of cleanliness and safety.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -277,38 +362,98 @@
         </div>
     </section>
 
-    <section id="services" class="services section bg-dark">
+    <section id="services" class="services section bg-light">
         <div class="container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <div class="line"></div>
+            <div class="services-header-row">
+                <div class="services-title-col">
+                    <h2>Our Services</h2>
+                    <p>Explore our comprehensive suite of services designed to propel your construction projects forward. From in-house manufacturing to turnkey construction solutions, our offerings are crafted with precision and driven by innovation.</p>
+                </div>
+                <div class="services-nav-col">
+                    <div class="swiper-button-prev-custom"><i class="fas fa-chevron-left"></i></div>
+                    <div class="swiper-button-next-custom"><i class="fas fa-chevron-right"></i></div>
+                </div>
             </div>
-            <div class="service-grid">
-                <div class="service-card">
-                    <div class="icon-wrapper"><i class="fas fa-industry"></i></div>
-                    <h3>Manufacturers</h3>
-                    <p>In-house production ensuring top-tier quality control for every single brick.</p>
+
+            <div class="swiper servicesSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Service 1 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card">
+                            <img src="assets/factory1.jpg" alt="Manufacturers" class="service-bg">
+                            <div class="service-overlay"></div>
+                            <div class="service-top">
+                                <span class="service-number">01</span>
+                                <div class="service-arrow"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></div>
+                            </div>
+                            <div class="service-bottom">
+                                <h3>Manufacturers</h3>
+                                <p>In-house production ensuring top-tier quality control for every single brick.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card">
+                            <img src="assets/hero-slide-4.png" alt="Wholesale & Retail" class="service-bg">
+                            <div class="service-overlay"></div>
+                            <div class="service-top">
+                                <span class="service-number">02</span>
+                                <div class="service-arrow"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></div>
+                            </div>
+                            <div class="service-bottom">
+                                <h3>Wholesale & Retail</h3>
+                                <p>Flexible supply options catering to both large contractors and individual home builders.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card">
+                            <img src="assets/gallery-10.png" alt="Bulk Supply" class="service-bg">
+                            <div class="service-overlay"></div>
+                            <div class="service-top">
+                                <span class="service-number">03</span>
+                                <div class="service-arrow"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></div>
+                            </div>
+                            <div class="service-bottom">
+                                <h3>Bulk Supply</h3>
+                                <p>Reliable and consistent supply for large-scale commercial and residential projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card">
+                            <img src="assets/gallery-2.jpg" alt="Home Delivery" class="service-bg">
+                            <div class="service-overlay"></div>
+                            <div class="service-top">
+                                <span class="service-number">04</span>
+                                <div class="service-arrow"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></div>
+                            </div>
+                            <div class="service-bottom">
+                                <h3>Home Delivery</h3>
+                                <p>Safe and timely transportation of materials directly to your construction site.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card">
+                            <img src="assets/project_institutional_1783768534878.png" alt="Turnkey Construction" class="service-bg">
+                            <div class="service-overlay"></div>
+                            <div class="service-top">
+                                <span class="service-number">05</span>
+                                <div class="service-arrow"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></div>
+                            </div>
+                            <div class="service-bottom">
+                                <h3>Turnkey Construction</h3>
+                                <p>Building with Interlock bricks? Our own expert engineers can manage and execute the entire construction process for you.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="icon-wrapper"><i class="fas fa-boxes"></i></div>
-                    <h3>Wholesale & Retail</h3>
-                    <p>Flexible supply options catering to both large contractors and individual home builders.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon-wrapper"><i class="fas fa-pallet"></i></div>
-                    <h3>Bulk Supply</h3>
-                    <p>Reliable and consistent supply for large-scale commercial and residential projects.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon-wrapper"><i class="fas fa-truck-loading"></i></div>
-                    <h3>Home Delivery</h3>
-                    <p>Safe and timely transportation of materials directly to your construction site.</p>
-                </div>
-                <div class="service-card highlight-service">
-                    <div class="icon-wrapper"><i class="fas fa-drafting-compass"></i></div>
-                    <h3>Turnkey Construction</h3>
-                    <p>Building with Interlock bricks? Our own expert engineers can manage and execute the entire construction process for you.</p>
-                </div>
+                <div class="swiper-pagination services-pagination"></div>
             </div>
         </div>
     </section>
@@ -370,7 +515,7 @@
         <div class="container footer-content" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; padding: 4rem 0 2rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); margin-bottom: 1rem;">
             
             <div class="footer-logo" style="flex: 1; min-width: 250px; text-align: left; display: flex; flex-direction: column; justify-content: center;">
-                <img src="assets/logo.jpg?v=2" alt="PIN Enterprises Logo" style="height: 150px; width: 150px; object-fit: contain; mix-blend-mode: multiply;">
+                <img src="assets/logo.jpg?v=2" alt="PIN Enterprises Logo" style="height: 120px; width: 120px; object-fit: cover; border-radius: 50%; border: 2px solid #f37021; box-shadow: 0 0 15px rgba(243, 112, 33, 0.3);">
                 <p style="margin-top: 1rem; color: var(--text-muted-dark); max-width: 250px;">Built on Quality, Trusted for Life. Premium Manufacturers of Hollow & Interlock Bricks.</p>
             </div>
             
@@ -399,26 +544,134 @@
         </div>
     </footer>
 
+    <!-- Custom Modal for Image & Info -->
+    <div id="infoModal" class="custom-modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modalImage" src="" alt="Modal Image">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalTitle">Title</h3>
+                    <p id="modalDesc">Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- turn.js for 3D flip book -->
+    <script src="https://cdn.jsdelivr.net/gh/blasten/turn.js@4th/lib/turn.min.js"></script>
     <script src="assets/page-flip.js"></script>
+    
     <script>
-        // Hero Swiper
-        var swiper = new Swiper(".heroSwiper", {
-            spaceBetween: 30,
-            effect: "fade",
+        // Modal Logic
+        const modal = document.getElementById("infoModal");
+        const modalImg = document.getElementById("modalImage");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDesc = document.getElementById("modalDesc");
+        
+        function openModal(imgSrc, title, desc) {
+            modalImg.src = imgSrc;
+            modalTitle.innerText = title;
+            modalDesc.innerText = desc;
+            modal.style.display = "block";
+            // small delay to allow display block to take effect before opacity transition
+            setTimeout(() => {
+                modal.classList.add("show");
+            }, 10);
+        }
+
+        function closeModal() {
+            modal.classList.remove("show");
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 300); // match css transition time
+        }
+
+        // Close when clicking outside of modal content
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Attach click events to all service arrows
+            const arrows = document.querySelectorAll('.service-arrow');
+            arrows.forEach(arrow => {
+                arrow.style.cursor = 'pointer';
+                arrow.addEventListener('click', function(e) {
+                    e.stopPropagation(); // prevent other clicks if card also has a link
+                    const card = this.closest('.service-slide-card');
+                    if (card) {
+                        const imgSrc = card.querySelector('.service-bg').src;
+                        const title = card.querySelector('.service-bottom h3').innerText;
+                        const desc = card.querySelector('.service-bottom p').innerText;
+                        openModal(imgSrc, title, desc);
+                    }
+                });
+            });
+        });
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Hero Background Swiper
+        var heroBgSwiper = new Swiper(".heroBgSwiper", {
+            spaceBetween: 0,
+            centeredSlides: true,
             loop: true,
+            effect: "fade",
             autoplay: {
-                delay: 3500,
+                delay: 4000,
                 disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
             },
         });
 
-        // Initialize Book Flip
-        window.addEventListener('load', function() {
+        // Services Swiper
+        var servicesSwiper = new Swiper(".servicesSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".services-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next-custom",
+                prevEl: ".swiper-button-prev-custom",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.new-dark-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Flipbook Initialization
+        $(document).ready(function() {
             try {
                 const bookEl = document.getElementById('bricks-flipbook');
                 const pages = document.querySelectorAll('.page');
@@ -456,9 +709,8 @@
                     }
                 }, 2500); // Shorter wait time before going to the next page
 
-            } catch (error) {
-                console.error("Flipbook Init Error:", error);
-                document.getElementById('bricks-flipbook').innerHTML = '<div style="padding: 20px; color: red;">Error loading flipbook: ' + error.message + '</div>';
+            } catch(e) {
+                console.error(e);
             }
         });
     </script>
