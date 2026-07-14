@@ -1336,12 +1336,12 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .nav-links {
+    .nav-center .nav-links {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background: var(--bg-darker);
+        background: rgba(30, 30, 50, 0.98);
         flex-direction: column;
         padding: 2rem;
         gap: 1.5rem;
@@ -1349,7 +1349,7 @@ footer {
         transition: all 0.5s ease-out;
     }
     
-    .nav-links.active {
+    .nav-center .nav-links.active {
         clip-path: circle(150% at 100% 0);
     }
     
