@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Construct WhatsApp message
             const whatsappNumber = '919003329921';
-            const text = `*New Quote Request*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Product:* ${productName}\n*Quantity:* ${quantity}\n*Details:* ${message}`;
+            const text = `*New Quote Request*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Product:* ${productName}\n*Quantity:* ${quantity}\n*Details:* ${message}\n\nwww.pinenterprises.live`;
             
             // Encode text for URL
             const encodedText = encodeURIComponent(text);
