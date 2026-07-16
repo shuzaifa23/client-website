@@ -25,7 +25,7 @@ Using Python 3:
 ```bash
 python3 -m http.server 3000
 ```
-Then navigate to `http://localhost:3000` in your web browser.
+Then navigate to `https://www.pinenterprises.live` in your web browser.
 
 Using Node.js (npx):
 ```bash
