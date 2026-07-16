@@ -55,4 +55,43 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Form submission to WhatsApp
+    const quoteForm = document.getElementById('quote-form');
+    if (quoteForm) {
+        quoteForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const product = document.getElementById('product').value;
+            
+            // Format product name for readability
+            let productName = product;
+            const productSelect = document.getElementById('product');
+            if(productSelect.options[productSelect.selectedIndex]) {
+                productName = productSelect.options[productSelect.selectedIndex].text;
+            }
+
+            const quantity = document.getElementById('quantity').value || 'Not specified';
+            const message = document.getElementById('message').value;
+
+            // Construct WhatsApp message
+            const whatsappNumber = '919003329921';
+            const text = `*New Quote Request*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Product:* ${productName}\n*Quantity:* ${quantity}\n*Details:* ${message}`;
+            
+            // Encode text for URL
+            const encodedText = encodeURIComponent(text);
+            
+            // Create WhatsApp URL
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+            
+            // Open in new tab
+            window.open(whatsappUrl, '_blank');
+            
+            // Optional: reset form
+            // quoteForm.reset();
+        });
+    }
 });
