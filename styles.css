@@ -1336,6 +1336,21 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    .section {
+        padding: 4rem 0;
+    }
+    .nav-left .logo-img {
+        height: 50px;
+    }
+    .company-name {
+        font-size: 1.2rem;
+    }
+    .company-tagline {
+        display: none;
+    }
     .nav-center .nav-links {
         position: absolute;
         top: 100%;
@@ -1355,11 +1370,84 @@ footer {
     
     .hamburger { display: block; }
     .hero h1 { font-size: 2.5rem; }
-    .hero p { font-size: 1.1rem; }
+    .hero p { font-size: 1rem; }
     .hero-buttons { flex-direction: column; justify-content: center; align-items: center; }
     .hero-slider-side { height: 250px; }
-    h2 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    .map-container { min-height: 300px; }
     .footer-logo, .footer-links { text-align: center !important; align-items: center !important; }
     .footer-logo p { margin-left: auto; margin-right: auto; }
     .footer-links ul { align-items: center !important; }
+}
+
+/* Quote Section */
+.quote-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg-card-light);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.quote-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    background: #fafafa;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(42, 42, 42, 0.1);
+    background: #fff;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.form-submit button {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .quote-form {
+        grid-template-columns: 1fr;
+    }
+    .quote-form-container {
+        padding: 1.5rem;
+    }
 }

@@ -456,6 +456,50 @@
             </div>
         </div>
     </section>
+    <section id="quote" class="quote section bg-light">
+        <div class="container">
+            <div class="section-header center">
+                <h2>Request a Quote</h2>
+                <div class="line center"></div>
+                <p class="subtitle">Fill out the form below and we'll get back to you with a customized quote for your project.</p>
+            </div>
+            <div class="quote-form-container">
+                <form class="quote-form" onsubmit="event.preventDefault(); alert('Quote Request Submitted!');">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+91 9876543210">
+                    </div>
+                    <div class="form-group">
+                        <label for="product">Interested Product</label>
+                        <select id="product" name="product" required>
+                            <option value="" disabled selected>Select a product</option>
+                            <option value="hollow">Hollow Bricks</option>
+                            <option value="interlock-8">Interlock Bricks (8 Inch)</option>
+                            <option value="interlock-6">Interlock Bricks (6 Inch)</option>
+                            <option value="flyash">Fly Ash Bricks</option>
+                            <option value="red">Red Bricks</option>
+                            <option value="other">Other / Not Sure</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Estimated Quantity (Optional)</label>
+                        <input type="number" id="quantity" name="quantity" placeholder="e.g., 5000">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    <div class="form-submit full-width">
+                        <button type="submit" class="btn-primary">Submit Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <section id="contact" class="contact section bg-dark">
         <div class="container">
